@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import solaimanPortrait from './solaiman.jpeg';
 import { 
   Menu, X, Sun, Moon, ArrowUp, ChevronLeft, ChevronRight, 
   Github, Linkedin, Mail, Code, Cpu, BookOpen, Heart, Activity
@@ -148,7 +149,7 @@ const Home = ({ navigate }) => {
             </RevealOnScroll>
             <RevealOnScroll delay={100}>
               <h1 className="text-5xl md:text-7xl font-bold leading-tight text-gray-900 dark:text-[#FEFAE0]">
-                Soleman
+                MD. Solaiman Hossen
               </h1>
             </RevealOnScroll>
             <RevealOnScroll delay={200}>
@@ -176,8 +177,8 @@ const Home = ({ navigate }) => {
             <RevealOnScroll delay={300} className="relative">
               <div className="absolute inset-0 bg-[#CCD5AE] rounded-full blur-3xl opacity-30 animate-pulse"></div>
               <img 
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" 
-                alt="Circuit Board Vintage" 
+                src={solaimanPortrait}
+                alt="MD. Solaiman Hossen"
                 className="relative z-10 w-full h-[500px] object-cover rounded-2xl shadow-2xl border-4 border-[#FAEDCD] dark:border-[#CCD5AE]/20 grayscale hover:grayscale-0 transition-all duration-700"
               />
               <div className="absolute -bottom-6 -left-6 bg-[#FEFAE0] dark:bg-[#1a2015] p-4 rounded-lg shadow-xl border border-[#D4A373]/30 z-20">
@@ -292,7 +293,7 @@ const About = () => {
       <div className="grid md:grid-cols-2 gap-16 items-start">
         <RevealOnScroll delay={100} className="space-y-8 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
           <p>
-            Greetings! I am Soleman, a dedicated student of Electrical and Electronic Engineering. My fascination with technology began not with screens, but with broken radios and tangled copper wires. 
+            Greetings! I am MD. Solaiman Hossen, a dedicated student of Electrical and Electronic Engineering. My fascination with technology began not with screens, but with broken radios and tangled copper wires. 
           </p>
           <p>
             I specialize in bridging the gap between low-level hardware and functional software. Whether it's configuring an ESP32 for IoT applications or designing complex schematics in Proteus, I thrive in the intersection of logic and physics.
@@ -311,8 +312,8 @@ const About = () => {
           <div className="relative">
             <div className="absolute inset-0 bg-[#D4A373] translate-x-4 translate-y-4 rounded-lg -z-10"></div>
             <img 
-              src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800" 
-              alt="Soleman Workspace" 
+              src={solaimanPortrait}
+              alt="MD. Solaiman Hossen"
               className="w-full h-auto rounded-lg shadow-xl sepia-[0.2]"
             />
           </div>
@@ -481,7 +482,7 @@ export default function App() {
             onClick={() => navigate('home')}
           >
             <Cpu size={28} />
-            Soleman
+            MD. Solaiman Hossen
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -536,7 +537,7 @@ export default function App() {
       <footer className="w-full bg-[#FAEDCD] dark:bg-black/40 border-t border-[#D4A373]/30 py-8 relative z-10 mt-auto">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm font-medium">
           <p className="text-gray-600 dark:text-[#E9EDC9]">
-            © {new Date().getFullYear()} Soleman. All rights reserved.
+            © {new Date().getFullYear()} MD. Solaiman Hossen. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <a href="#" className="text-gray-600 dark:text-[#E9EDC9] hover:text-[#D4A373] transition-colors"><Github size={20} /></a>
